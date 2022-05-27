@@ -1,0 +1,530 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(41, 41, 41);
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 0.5vw;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(41, 41, 41);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(134, 124, 124);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(179, 44, 44);
+}
+
+ul {
+  list-style-type: none;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 1vw 2vw;
+  text-decoration: none;
+  max-width: 12vw;
+  min-width: 16vw;
+  background-color: rgb(102, 102, 102);
+}
+
+li a:hover {
+  background-color: rgb(179, 44, 44);
+  transition: 0.8s;
+}
+
+.menu2>li>ul {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  /* display:none; */
+  position: absolute;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: rgb(110, 110, 110);
+}
+
+.menu {
+  margin-left: 15vw;
+  height: 10vh;
+}
+
+.menu2>li:hover>ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+.liwysuwane {
+  clear: both;
+}
+
+.onas {
+  clear: both;
+  text-align: justify;
+  margin-top: 4vh;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(68, 67, 67);
+  width: 80vw;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0.4vw 0.4vh 0.1vw rgba(179, 44, 44, 1);
+  padding-bottom: 1vh;
+  padding-top: 0.2vh;
+}
+
+#pcod {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  margin-left: 10vw;
+}
+
+/* odnośnik do zdjęcia Białasika */
+.developer {
+  border-radius: 20px;
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
+  width: 15vw;
+}
+
+/* id tekstu przy Białasiku */
+.dev {
+  text-align: center;
+}
+
+/* odnośnik do diva o Białasiku */
+.zarzad {
+  margin-top: 5vw;
+  width: 20vw;
+  min-height: 20vh;
+  float: left;
+  margin-left: 5vw;
+  margin-bottom: 5vh;
+}
+
+.galeria {
+  clear: both;
+  text-align: justify;
+  margin-top: 4vh;
+
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(68, 67, 67);
+  width: 80vw;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0.4vw 0.4vh 0.1vw rgba(179, 44, 44, 1);
+  padding-top: 0.2vh;
+}
+
+.galeriazdjecia {
+  width: 24.6vw;
+  margin-left: 1vw;
+  margin-top: 2vh;
+  margin-right: 1vw;
+  float: left;
+  margin-bottom: 2vh;
+}
+
+.galeriadiv {
+  color: red;
+}
+
+.galeriadiv img {
+  transition-duration: 1s;
+}
+
+.galeriadiv img:hover {
+  transform: scale(1.15);
+  z-index: 0;
+}
+
+.stopka {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1vw;
+}
+
+.footer {
+  height: auto;
+  width: 80vw;
+  background-color: rgb(68, 67, 67);
+  box-shadow: 0.4vw 0.4vh 0.1vw rgba(179, 44, 44, 1);
+  clear: both;
+  margin-top: 5vh;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  padding: 2vh;
+}
+
+.formularz {
+  margin-left: 15vw;
+  margin-top: 10vh;
+  float: left;
+}
+
+.classformularz {
+  height: 5vh;
+  background-color: rgb(41, 41, 41);
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid red;
+  font-size: 2vh;
+  color: white;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+input:focus {
+  text-decoration-style: none;
+  background-color: rgb(37, 37, 37);
+  outline: none;
+}
+
+input:hover {
+  background-color: rgb(37, 37, 37);
+}
+
+.kontent {
+  display: block;
+  position: relative;
+  padding-left: 2vw;
+  margin-bottom: 1vh;
+  cursor: pointer;
+  font-size: 2vh;
+  user-select: none;
+}
+
+.kontent input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.spanchek {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3vh;
+  width: 1.6vw;
+  background-color: rgb(46, 44, 44);
+}
+
+.kontent:hover input~.spanchek {
+  background-color: rgb(161, 23, 23);
+}
+
+.kontent input:checked~.spanchek {
+  background-color: #f32121;
+}
+
+.spanchek:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.kontent input:checked~.spanchek:after {
+  display: block;
+}
+
+.kontent .spanchek:after {
+  left: 0.6vw;
+  top: 0.6vh;
+  width: 0.1vw;
+  height: 1vh;
+  border: solid rgb(255, 255, 255);
+  border-width: 0 0.2vw 0.2vw 0;
+  transform: rotate(45deg);
+}
+
+.przyciskikoniec {
+  width: 10vw;
+  height: 5vh;
+  color: white;
+  background-color: rgb(46, 44, 44);
+  border: none;
+  font-size: 2vh;
+}
+
+.kontaktnasz {
+  float: left;
+  margin-left: 5vw;
+  margin-top: 10vh;
+  width: 30vw;
+  height: 40vh;
+  text-align: justify;
+
+  border-radius: 20px;
+}
+
+#biuro1 {
+  float: right;
+  width: 25vw;
+  margin: 1vw;
+}
+
+.oferty {
+  clear: both;
+  text-align: justify;
+  margin-top: 4vh;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(68, 67, 67);
+  width: 80vw;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0.4vw 0.4vh 0.1vw rgba(179, 44, 44, 1);
+  padding-bottom: 1vh;
+  padding-top: 0.2vh;
+}
+
+.spam {
+  margin: 5vw;
+  font-weight: bold;
+}
+
+#biuro2 {
+  width: 25vw;
+  float: right;
+
+  margin: 2vw;
+}
+
+.hosting {
+  width: 20vw;
+  /* background-color: rgb(255, 255, 255); */
+  margin-left: 5vw;
+  /* text-align: center; */
+  float: left;
+}
+
+#hosting1 {
+  text-align: left;
+}
+
+h2 {
+  text-align: center;
+}
+
+#hosting2 {
+  clear: both;
+  text-align: justify;
+  margin-top: 4vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80vw;
+  height: auto;
+  border-radius: 20px;
+  padding-left: 5vw;
+  padding-bottom: 1vh;
+  padding-top: 0.2vh;
+}
+
+#biuro3 {
+  display: none;
+}
+
+#biuro4 {
+  display: none;
+}
+
+.menumob {
+  display: none;
+}
+
+#zamkniecie {
+  display: none;
+}
+
+@media only screen and (max-width: 680px) {
+  .hosting {
+    width: 80vw;
+    float: left;
+    margin: 0;
+    text-align: center;
+  }
+
+  #hosting2 {
+    text-align: center;
+    width: 70vw;
+  }
+
+  #biuro2 {
+    display: none;
+  }
+
+  #biuro3 {
+    width: 80vw;
+  }
+
+  #biuro4 {
+    width: 80vw;
+  }
+
+  #biuro1 {
+    display: none;
+  }
+
+  #h1nw {
+    margin-right: 5vw;
+  }
+
+  .kontent {
+    display: block;
+    position: relative;
+    padding-left: 4vw;
+    margin-bottom: 1vh;
+    cursor: pointer;
+    font-size: 2vh;
+    user-select: none;
+  }
+
+  .spanchek {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3vh;
+    width: 3.5vw;
+    background-color: rgb(46, 44, 44);
+  }
+
+  .kontent:hover input~.spanchek {
+    background-color: rgb(46, 44, 44);
+  }
+
+  .kontent input:checked~.spanchek {
+    background-color: #f32121;
+  }
+
+  .spanchek:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .kontent input:checked~.spanchek:after {
+    display: none;
+  }
+
+  .kontent .spanchek:after {
+    display: none;
+  }
+
+  .przyciskikoniec {
+    width: 20vw;
+  }
+
+  .classformularz {
+    width: 60vw;
+  }
+
+  .kontaktnasz {
+    margin-left: 15vw;
+  }
+
+  .zarzad {
+    width: 80vw;
+    margin: 0;
+  }
+
+  .developer {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width: 70vw;
+    margin-top: 5vh;
+  }
+
+  .galeriazdjecia {
+    width: 70vw;
+    margin-left: 5vw;
+    margin-top: 2vh;
+    margin-right: 1vw;
+    margin-bottom: 1vh;
+  }
+
+  .menumob {
+    display: block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .menumob-kontent {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 10vh;
+  }
+
+  .menumob a {
+    padding: 0.5vw;
+    text-decoration: none;
+    font-size: 4vh;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .menumob a:hover,
+  .menumob a:focus {
+    color: #aa1515;
+  }
+
+  .menumob .kodzamkniecie {
+    position: absolute;
+    top: 1vh;
+    right: 4vw;
+    font-size: 5vh;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menumob {
+    display: block;
+  }
+
+  #zamkniecie {
+    display: block;
+  }
+}

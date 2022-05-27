@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function otwarcie() {
+            document.getElementById("mojemenu").style.width = "100%";
+        }
+
+        function zamkniecie() {
+            document.getElementById("mojemenu").style.width = "0%";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="menu">
+        <ul class="menu2">
+            <li>
+                <a href="index.html"> Strona główna </a>
+                <ul>
+                    <li class="liwysuwane"><a href="index.html#nasz_zespol">Nasz zespół</a></li>
+                    <li class="liwysuwane"><a href="index.html#galeria">Galeria</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="oferta.html">Oferta</a>
+                <ul>
+                    <li class="liwysuwane"><a href="oferta.html#pozycjonowanie">Pozycjonowanie <br>stron
+                            internetowych</a></li>
+                    <li class="liwysuwane"><a href="oferta.html#tworzenie">Tworzenie <br>stron internetowych</a></li>
+                    <!-- <li class="liwysuwane" ><a href="oferta.html">Tworzenie <br> baz danych</a></li> -->
+                    <li class="liwysuwane"><a href="oferta.html#domeny">Wykup <br>domene internetową</a></li>
+
+
+                </ul>
+            </li>
+            <li>
+                <a href="kontakt.html">Kontakt </a>
+                <ul>
+                    <li class="liwysuwane"><a href="kontakt.html#kontaktznami">Pomoc<br></a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="mojemenu" class="menumob">
+        <a href="javascript:void(0)" class="kodzamkniecie" onclick="zamkniecie()">&times;</a>
+        <div class="menumob-kontent">
+            <a href="index.html">Strona główna</a>
+            <a href="oferta.html">Oferta</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="otwarcie()" id="zamkniecie">&#9776; </span>
+    <div class="oferty"><a name=pozycjonowanie></a>
+        <a name=nasz_zespol>
+
+            <h1>Czym jest pozycjonowanie</h1>
+            <img src="img/biuro1.jpg" alt="" id="biuro1">
+            <p id="pcod">
+                Pozycjonowanie pozwala na zwiększenie widoczności witryny wśród wyników wyszukiwarek. Użytkownicy
+                wpisują frazę, która ich interesuje, a wyszukiwarka w wynikach przedstawia witryny, jakie pasują do
+                zapytania. Google dba o to, aby polecać użytkownikom strony, które będą zawierały odpowiednie
+                informacje. Muszą one także spełniać inne wymagania. Wśród nich jest bezpieczeństwo, odpowiednia
+                szybkość ładowania, ale też użyteczność. Weryfikacja tego czy dana witryna zasługuje na określone
+                miejsce polega na badaniu witryn przez roboty indeksujące Google. Na najwyższych miejscach znajdują się
+                więc strony, które są odpowiednio zoptymalizowane pod roboty, ale jednocześnie spełniają oczekiwania
+                użytkowników. Pozycjonowanie jest obecnie wręcz obowiązkiem każdego właściciela strony internetowej.
+
+
+
+                <!-- </div> -->
+
+                <!-- <div class="pozycjonowaniestron" >
+                        <a name=nasz_zespol> -->
+                <br>
+                <h1 id="h1nw">Dlaczego warto pozycjonować strone w Google</h1>
+                <p id="pcod">
+                    Wiadome jest to że użytkownik wejdzie w pierwsza strone która mu sie pokaże dlatego storny które są
+                    na pierwszych miejscach są odwiedzane 50% częsciej dla przykładu na strone która znajdzuje sie na
+                    dziesiątym miejscu w Googlu aby 10%. Odpowiednie dobieranie słów kluczowych w swoich artukułach jest
+                    drogą do sukcesu nasi specjaliście pomogą Ci dobrać odpowiednie frazy. Dzięki temu na Twoją stronę
+                    trafią wyłącznie osoby zainteresowane Twoimi produktami i usługami. </p>
+
+
+
+    </div>
+    <a name=tworzenie>
+        <div class="oferty">
+            <h1>Rodzaje stron internetowych</h1>
+            <img src="img/biuro2.jpg" alt="" id="biuro3">
+            <p id="pcod">
+                Dwa podstawowe rodzaje stron www – witryny statyczne oraz strony dynamiczne po krótce wyjaśnie wady i
+                zalety obydwóch rodzajów<br><br><img src="img/biuro2.jpg" alt="" id="biuro2">
+                <span class="spam">Wady strony dynamicznej <br></span>
+                -wolniejsze ładowanie strony<br>
+                -droższa w utrzymaniu <br><br>
+                <span class="spam">Zalety strony dynamicznej </span><br>
+                +łatwiejsze i szybsze aktualizacje, oraz prostsze wprowadzanie treści<br>
+                +wiecej możliwości animcaji oraz są bardziej atrakcyjne<br>
+                <br>
+                <span class="spam">Wady strony statycznej</span><br>
+
+                –brak systemu CMS, wymaga aktualizacji i zmian od programisty<br>
+                –mniej angażująca i atrakcyjna dla użytkowników<br><br>
+                <span class="spam">Zalety strony statycznej</span><br>
+                +szybsze ładowanie sie strony <br>
+                +mniej zależności lub nawet ich brak, jeśli chodzi o zewnętrzne systemy<br>
+
+
+
+            </p>
+        </div>
+
+
+
+
+        <div class="oferty">
+            <h1>Wybierz domene</h1>
+
+
+
+            <div class="hosting">
+                <h2>Podstawa</h2><br>
+                <span id="hosting1">200 GB przestrzeni dyskowej<br>
+                    Transfer bez limitu<br>
+                    Hosting zgodny z RODO<br>
+                    Konta e-mail i WWW bez limitu<br>
+                    Bazy na dyskach SSD<br>
+                    Domeny .pl za 0 zł<br>
+                </span>
+                <h2>
+                    19,99zł/miesiąc
+                </h2>
+            </div>
+
+            <a name=domeny></a>
+            <div class="hosting">
+                <h2>Optymalna</h2><br>
+                <span id="hosting1">300 GB przestrzeni dyskowej<br>
+                    Transfer bez limitu<br>
+                    Hosting zgodny z RODO<br>
+                    Konta e-mail i WWW bez limitu<br>
+                    Bazy na dyskach SSD<br>
+                    Wszystkie domeny za 0 zł<br>
+                </span>
+                <h2>
+                    29,99zł/miesiąc
+                </h2>
+            </div>
+            <div class="hosting">
+                <h2>Profesjonlana</h2><br>
+                <!-- <span id="hosting1" > -->
+                500 GB przestrzeni dyskowej<br>
+                Transfer bez limitu<br>
+                Hosting zgodny z RODO<br>
+                Konta e-mail i WWW bez limitu<br>
+                Bazy na dyskach SSD<br>
+                Wszystkie domeny za 0 zł<br>
+                </span>
+                <h2>
+                    39,99zł/miesiąc
+                </h2>
+            </div>
+            <!-- <div class="oferty" >asdasdasdasd</div> --><br>
+            <p id="hosting2">
+                Wypełni formularz zgłoszeniowy w wybierz którą domene wybierasz
+            </p>
+        </div>
+
+
+        <div class="footer">Dawid Lorych &copy; copyright </div>
+
+
+
+</body>
+
+</html>

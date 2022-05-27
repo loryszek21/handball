@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona główna</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        function otwarcie() {
+            document.getElementById("mojemenu").style.width = "100%";
+        }
+
+        function zamkniecie() {
+            document.getElementById("mojemenu").style.width = "0%";
+        }
+    </script>
+
+    </script>
+
+</head>
+
+<body>
+    <!-- <a href="#koniec">Koniec strony</a> KOtwica -->
+
+    <div class="menu">
+        <ul class="menu2">
+            <li>
+                <a href="index.html"> Strona główna </a>
+                <ul>
+                    <li class="liwysuwane"><a href="#nasz_zespol">Nasz zespół</a></li>
+                    <li class="liwysuwane"><a href="#galeria">Galeria</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="oferta.html">Oferta</a>
+                <ul>
+                    <li class="liwysuwane"><a href="oferta.html#pozycjonowanie">Pozycjonowanie <br>stron
+                            internetowych</a></li>
+                    <li class="liwysuwane"><a href="oferta.html#tworzenie">Tworzenie <br>stron internetowych</a></li>
+                    <li class="liwysuwane"><a href="oferta.html#domeny">Wykup <br>domene internetową</a></li>
+
+
+                </ul>
+            </li>
+            <li>
+                <a href="kontakt.html">Kontakt </a>
+                <ul>
+                    <li class="liwysuwane"><a href="kontakt.html#kontaktznami">Pomoc<br></a></li>
+                </ul>
+            </li>
+            <!-- <li><a href="#"></a>  </li> -->
+        </ul>
+    </div>
+    <div id="mojemenu" class="menumob">
+        <a href="javascript:void(0)" class="kodzamkniecie" onclick="zamkniecie()">&times;</a>
+        <div class="menumob-kontent">
+            <a href="index.html">Strona główna</a>
+            <a href="oferta.html">Oferta</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="otwarcie()" id="zamkniecie">&#9776; </span>
+    <div class="onas">
+        <a name=nasz_zespol>
+
+            <h1>CodeWEB</h1>
+            <p id="pcod">
+                CodeWEB to polskie małe studio specializujące się w tworzeniu stron. Z naszych stron oraz serwerow
+                korzysta juz ponad 100 zadowlonych użytkowników. Od ponad 3 lat nieustanie rozwijamy nasze umiejętności.
+                Nasz zespoł składa się z sześciu świetnie wyszkolonych specialistów.
+            </p>
+
+            <div class="zarzad">
+                <img src="img/webdeveloper1.jpg" alt="najlepszydeveloper" class="developer"></p>
+
+                <p class="dev">
+                    Wojciech Białasik <br>Front-end developer- "szef" całego zespołu expert w tworzeniu oraz
+                    pozycjonowaniu stron w internecie. Ogromne doświadczenie i chęci do pracy. Dzięki niemu CodeWEB jest
+                    dziś ogolnopolskim liderem. Do jego zadań należy także tworzenie oraz sprawdzanie projektów
+                </p>
+            </div>
+
+            <div class="zarzad">
+                <img src="img/webdeveloperM1.jpg" alt="bazadanych" class="developer">
+                <p class="dev">
+                    Szymon Michalewicz <br>
+                    Senior Database developer- zarządza podzespołem od baz danych, specjalizuje sie programowaniu w
+                    jęzku MYSQL, nie jedno krotnie nagradzany za swoje umiejętności na szczeblu ogólnopolskim. Kluczowa
+                    osoba w CodeWEB
+
+
+            </div>
+            <div class="zarzad">
+                <img src="img/webdeveloperMM1.jpg" alt="główny dyrektor" class="developer">
+                <p class="dev">
+                    Maja Markiewicz <br>
+                    Główny dyrektor zarządu, reprezentuje zespół podczas podpisywania kontraktów, dba o wygląd graficzny
+                    strony oraz zarządza budżetem zarobionym z poprzednich gierek mikołajkowych
+                </p>
+            </div>
+
+        </a>
+
+
+    </div>
+
+
+
+
+
+    <div class="galeria">
+        <a name="galeria"></a>
+        <h1>Galeria </h1>
+        <p id="pcod">Zespoł po za pracą w naszej firmie równiaż ma wycieczki oraz integracje dzięki czemu każdy z
+            pracowników jest wesoły</p>
+        <br>
+        <div class="galeriadiv">
+            <a href="img/zdjecie1.jpg" class="azdjecie">
+                <img src="img/zdjecie1.jpg" class="galeriazdjecia"></a>
+            <a href="img/zdjecie2.jpg" class="azdjecie"><img class="galeriazdjecia" src="img/zdjecie2.jpg"></a>
+            <a href="img/zdjecie3.jpg" class="azdjecie"><img src="img/zdjecie3.jpg" class="galeriazdjecia"></a>
+            <a href="img/zdjecie4.jpg" class="azdjecie"><img src="img/zdjecie4.jpg" class="galeriazdjecia"></a>
+            <a href="img/zdjecie5.jpg" class="azdjecie"><img src="img/zdjecie5.jpg" class="galeriazdjecia"></a>
+            <a href="img/zdjecie6.jpg" class="azdjecie"><img src="img/zdjecie6.jpg" class="galeriazdjecia"></a>
+        </div>
+
+
+        </a>
+    </div>
+
+    <div class="footer">Dawid Lorych &copy; copyright </div>
+
+
+    <link rel="stylesheet" href="style.css">
+</body>
+
+
+
+
+
+</html>

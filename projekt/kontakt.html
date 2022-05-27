@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function otwarcie() {
+      document.getElementById("mojemenu").style.width = "100%";
+    }
+
+    function zamkniecie() {
+      document.getElementById("mojemenu").style.width = "0%";
+    }
+  </script>
+
+</head>
+
+<body>
+  <div class="menu">
+    <ul class="menu2">
+      <li>
+        <a href="index.html"> Strona główna </a>
+        <ul>
+          <li class="liwysuwane"><a href="index.html#nasz_zespol">Nasz zespół</a></li>
+          <li class="liwysuwane"><a href="index.html#galeria">Galeria</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="oferta.html">Oferta</a>
+        <ul>
+          <li class="liwysuwane"><a href="oferta.html">Pozycjonowanie <br>stron internetowych</a></li>
+          <li class="liwysuwane"><a href="oferta.html">Tworzenie <br>stron internetowych</a></li>
+          <!-- <li class="liwysuwane" ><a href="oferta.html">Tworzenie <br> baz danych</a></li> -->
+          <li class="liwysuwane"><a href="oferta.html">Wykup <br>domene internetową</a></li>
+
+
+        </ul>
+      </li>
+      <li>
+        <a href="kontakt.html">Kontakt </a>
+        <ul>
+          <li class="liwysuwane"><a href="kontakt.html#kontaktznami">Pomoc<br></a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div id="mojemenu" class="menumob">
+    <a href="javascript:void(0)" class="kodzamkniecie" onclick="zamkniecie()">&times;</a>
+    <div class="menumob-kontent">
+      <a href="index.html">Strona główna</a>
+      <a href="oferta.html">Oferta</a>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+  </div>
+  <span style="font-size:30px;cursor:pointer" onclick="otwarcie()" id="zamkniecie">&#9776; </span>
+  <!-- formularz kontaktowy  -->
+
+  <div class="formularz">
+    <form action="" method="post">
+      Podaj swoje imie <br>
+      <input type="text" placeholder="Imie" class="classformularz"><br>
+      Podaj adres E-mail <br>
+      <input type="email" placeholder="E-mail" class="classformularz"><br>
+      Podaj numer telefonu <br>
+      <input type="tel" name="numer" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" id="numertel" placeholder="numer telefonu"
+        class="classformularz"><br>
+      Wybierz projekt<br><br>
+
+
+      <label class="kontent">Pozycjonowanie strony w internecie
+        <input type="checkbox" checked="checked">
+        <span class="spanchek"></span>
+      </label>
+
+      <label class="kontent">Tworzenie strony internetowej statycznej
+        <input type="checkbox">
+        <span class="spanchek"></span>
+      </label>
+
+
+      <label class="kontent">Tworzenie strony internetowej dynamicznej
+        <input type="checkbox">
+        <span class="spanchek"></span>
+      </label>
+
+      <label class="kontent">Domena podstawowa
+        <input type="checkbox">
+        <span class="spanchek"></span>
+      </label>
+
+      <label class="kontent">Domena optymalna
+        <input type="checkbox">
+        <span class="spanchek"></span>
+      </label>
+      <label class="kontent">Domena profesjonlana
+        <input type="checkbox">
+        <span class="spanchek"></span>
+      </label>
+
+      <br>
+      <!-- <input type="textarea"><br> -->
+      <input type="submit" value="Wyślij" class="przyciskikoniec">
+      <input type="reset" value="Resetuj" class="przyciskikoniec">
+
+
+  </div>
+  <a name=kontaktznami></a>
+  <div class="kontaktnasz">
+    <!-- Nasz adres <br>
+  <input type="text" value="" class="classformularz" disabled><br> -->
+    Nasz adres E-mail <br>
+    <input type="email" value="d.lorych@zset.leszno.pl" class="classformularz"><br>
+    Nasz numer telefonu <br>
+    <input type="tel" name="numer" id="numertel" class="classformularz" value="607599137" disabled><br>
+
+
+
+
+  </div>
+
+  </form>
+  </div>
+</body>
+
+</html>
